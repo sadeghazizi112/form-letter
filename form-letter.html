@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Form Letter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fill in the blanks to write your letter!</h1>
+      <div>
+        <form id="formOne">
+          <div class="form-group">
+            <label for="person1">Someone's name</label>
+            <input id="person1" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="person2">Your name</label>
+            <input id="person2" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="feeling">A Feeling (lower case)</label>
+            <input id="feeling" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="activity">An activity (ends with -ing)</label>
+            <input id="activity" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="frequency">A frequency of activity (a lot, sometimes, etc)</label>
+            <input id="frequency" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="frequency2">A frequency of returning (Soon, eventually, etc.)</label>
+            <input id="frequency2" class="form-control" type="text">
+          </div>
+
+          <button type="submit" class="btn">Show me the letter!</button>
+        </form>
+      </div>
+      <div id="letterheading">
+        <h1>Your Letter:</h1>
+      </div>
+      <div id="letter">
+        <p>
+          Hello, <span class="person1"></span>. Its <span class="person2"></span>. How are you doing?
+          I'm <span class="feeling"></span>. I've been <span class="activity"></span>
+          <span class="frequency"></span> lately. I hope to see you <span class="frequency2"></span>.
+          <br><br>Signed, <span class="person2"></span>.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
